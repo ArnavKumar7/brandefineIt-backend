@@ -42,6 +42,9 @@ class Input(BaseModel):
     m4sem: str
     transactionId: str
 
+@app.get("/")
+def hello_world():
+    return {"message": "Hello World"}
 
 @app.post("/create")
 def add_user(input: Input):
