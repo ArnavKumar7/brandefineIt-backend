@@ -59,3 +59,8 @@ def get_user():
         i['_id']=str(i['_id'])
         l.append(i)
     return l
+
+@app.put('/update')
+def update_user(input: Input):
+    database.db.brandefineit.update_one({"id":input.id},{"$set":input.dict()})
+    return {"message": "success"}
