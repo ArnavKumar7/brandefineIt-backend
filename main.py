@@ -19,7 +19,6 @@ class Input(BaseModel):
     m2name: str
     m2email: str
     m2phone: str
-    m2dob: str
     m2college: str
     m2usn: str
     m2course: str
@@ -27,7 +26,6 @@ class Input(BaseModel):
     m3name: str
     m3email: str
     m3phone: str
-    m3dob: str
     m3college: str
     m3usn: str
     m3course: str
@@ -35,7 +33,6 @@ class Input(BaseModel):
     m4name: str
     m4email: str
     m4phone: str
-    m4dob: str
     m4college: str
     m4usn: str
     m4course: str
